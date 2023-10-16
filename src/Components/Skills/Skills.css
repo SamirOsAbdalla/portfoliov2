@@ -1,0 +1,75 @@
+.skills__wrapper {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-right: 15vw;
+    padding-left: 15vw;
+    background-color: rgb(18, 30, 39);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: white;
+}
+
+.skills__header span {
+    color: white;
+}
+
+.skills__text {
+
+    padding-bottom: 2em;
+}
+
+.skills__technologies {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.skills__card {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 360px;
+    border-radius: 2px;
+    box-shadow: var(--blue-color) 0px 3px 6px 0px, var(--blue-color) 0px 0px 0px 1px;
+}
+
+.skills__image__container {
+    width: 50%;
+    min-width: 120px;
+    gap: 0em;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.skills__image {
+    position: relative;
+}
+
+.image__third {
+    bottom: 1em;
+}
+
+.skills__card__title {
+    padding-bottom: 2em;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+.skills__paragraph {
+    font-size: 12px;
+}
+
+.skills__image__nodeexpress {
+    gap: 1em;
+}
