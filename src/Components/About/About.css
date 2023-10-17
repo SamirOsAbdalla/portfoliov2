@@ -47,10 +47,6 @@
     transition: 0.2s ease-out;
 }
 
-.section__header:hover::after {
-    width: 120px;
-}
-
 
 .about__list {
     height: 80px;

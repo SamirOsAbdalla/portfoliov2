@@ -10,6 +10,13 @@
     color: white;
 }
 
+.skill__motion {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: white;
+}
+
 .skills__header span {
     color: white;
 }
@@ -18,6 +25,11 @@
 
     padding-bottom: 2em;
 }
+
+.skills__bold {
+    font-weight: bold;
+}
+
 
 .skills__technologies {
     display: flex;
@@ -60,6 +72,7 @@
 }
 
 .skills__card__title {
+    padding-top: 1em;
     padding-bottom: 2em;
     font-weight: bold;
     text-align: center;
@@ -72,4 +85,15 @@
 
 .skills__image__nodeexpress {
     gap: 1em;
+}
+
+.skills__summary {
+    width: 60%;
+    padding-top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 300px;
+    gap: 1em;
+    justify-content: center;
+    align-self: center;
 }
