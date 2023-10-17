@@ -41,19 +41,6 @@ nav {
     position: relative;
 }
 
-/* .nav__text::after {
-    position: absolute;
-    top: 1.3em;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: "";
-    width: 100%;
-    height: 3px;
-    border-radius: 1.5px;
-    background-color: aqua;
-} */
-
 .name__span,
 .nav__number {
     color: var(--blue-color);
@@ -66,6 +53,10 @@ nav ul,
     gap: 1.6em;
 }
 
+nav ul {
+    gap: 2.5em;
+}
+
 nav ul li,
 .dropdown__menu ul li {
     position: relative;
@@ -74,7 +65,8 @@ nav ul li,
     gap: 0.2em;
 }
 
-nav ul li::after {
+nav ul li::after,
+.dropdown__menu ul li::after {
     content: "";
     position: absolute;
     height: 2px;
@@ -87,7 +79,8 @@ nav ul li::after {
     transition: 0.3s;
 }
 
-nav ul li:hover::after {
+nav ul li:hover::after,
+.dropdown__menu ul li:hover::after {
     width: 100%;
 }
 
@@ -97,7 +90,7 @@ nav ul li:hover::after {
 }
 
 .dropdown__menu ul li {
-    width: 100px;
+    width: fit-content;
 }
 
 .dropdown__menu {
