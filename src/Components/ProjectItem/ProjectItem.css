@@ -111,7 +111,7 @@
     justify-content: flex-end;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:975px) {
     .projectitem__wrapper {
         box-shadow: var(--blue-color) 0px 3px 6px 0px, var(--blue-color) 0px 0px 0px 1px;
         border-radius: 5px;
