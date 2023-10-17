@@ -1,0 +1,23 @@
+.projects__wrapper {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-right: 15vw;
+    padding-left: 15vw;
+
+}
+
+.projects__list {
+    width: 100%;
+    padding-top: 5em;
+    gap: 8em;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width:800px) {
+    .projects__wrapper {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+}
