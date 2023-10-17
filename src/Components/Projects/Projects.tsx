@@ -50,8 +50,9 @@ function Projects(props: any, ref: any) {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: .6, ease: "easeIn" }}
                 viewport={{ once: true, amount: 0.1 }}
+                className="projects__motion"
             >
-                <h2 className="section__header"><span>Projects</span></h2>
+                <h2 className="section__header projects__header"><span>Projects</span></h2>
                 <div className="projects__list">
                     <ProjectItem {...clusterObject} />
                     <ProjectItem {...pokestoreObject} />

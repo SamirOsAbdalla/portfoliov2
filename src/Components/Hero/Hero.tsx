@@ -24,7 +24,7 @@ export default function Hero({ projectsRef }: Props) {
                             <Image fill alt="Cloud" src={cloudSvg} />
                         </div>
                     </div>
-                    <div style={{ top: "70vh", left: "30vw" }} className="cloud__wrapper .moveAnimationFive">
+                    <div style={{ top: "90vh", left: "30vw" }} className="cloud__wrapper .moveAnimationFive">
                         <div style={{ width: "50px", height: "50px", opacity: "0.5" }} className="cloud">
                             <Image fill alt="Cloud" src={cloudSvg} />
                         </div>
@@ -49,7 +49,7 @@ export default function Hero({ projectsRef }: Props) {
                             <Image fill alt="Cloud" src={cloudSvg} />
                         </div>
                     </div>
-                    <div style={{ top: "0vh", left: "10vw" }} className="cloud__wrapper moveAnimationTwo">
+                    <div style={{ top: "0vh", left: "6vw" }} className="cloud__wrapper moveAnimationTwo">
                         <div style={{ width: "75px", height: "75px", opacity: "0.3" }} className="cloud">
                             <Image fill alt="Cloud" src={cloudSvg} />
                         </div>
@@ -64,7 +64,7 @@ export default function Hero({ projectsRef }: Props) {
                             <Image fill alt="Cloud" src={cloudSvg} />
                         </div>
                     </div>
-                    <div style={{ top: "70vh", left: "80vw" }} className="cloud__wrapper moveAnimationTwo">
+                    <div style={{ top: "80vh", left: "80vw" }} className="cloud__wrapper moveAnimationTwo">
                         <div style={{ width: "45px", height: "45px", opacity: "1" }} className="cloud">
                             <Image fill alt="Cloud" src={cloudSvg} />
                         </div>
@@ -84,12 +84,12 @@ export default function Hero({ projectsRef }: Props) {
                             <Image fill alt="Cloud" src={cloudSvg} />
                         </div>
                     </div>
-                    <div style={{ top: "50vh", left: "10vw" }} className="cloud__wrapper moveAnimationOne">
+                    <div style={{ top: "50vh", left: "6vw" }} className="cloud__wrapper moveAnimationOne">
                         <div style={{ width: "35px", height: "35px", opacity: "0.6" }} className="cloud">
                             <Image fill alt="Cloud" src={cloudSvg} />
                         </div>
                     </div>
-                    <div style={{ top: "27vh", left: "-10vw" }} className="cloud__wrapper .moveAnimationFour">
+                    <div style={{ top: "27vh", left: "-6vw" }} className="cloud__wrapper .moveAnimationFour">
                         <div style={{ width: "50px", height: "50px", opacity: "0.3" }} className="cloud">
                             <Image fill alt="Cloud" src={cloudSvg} />
                         </div>
@@ -99,7 +99,7 @@ export default function Hero({ projectsRef }: Props) {
                             <Image fill alt="Cloud" src={cloudSvg} />
                         </div>
                     </div>
-                    <div style={{ top: "67vh", left: "-10vw" }} className="cloud__wrapper .moveAnimationFive ">
+                    <div style={{ top: "67vh", left: "-6vw" }} className="cloud__wrapper .moveAnimationFive ">
                         <div style={{ width: "70px", height: "70px", opacity: "1" }} className="cloud">
                             <Image fill alt="Cloud" src={cloudSvg} />
                         </div>
@@ -131,7 +131,7 @@ export default function Hero({ projectsRef }: Props) {
                             <div className="hero__tag">I build web applications</div>
 
                             <p className="hero__blurb">
-                                I am a Full-Stack developer who loves working with all kinds
+                                I am a Full-Stack Developer who loves working with all kinds
                                 of software. I carefully break down problems in order to turn
                                 great ideas into an even better reality.
                             </p>
@@ -139,7 +139,7 @@ export default function Hero({ projectsRef }: Props) {
                                 <div onClick={handleViewClick} className="hero__button">
                                     View Work
                                 </div>
-                                <a href="https://samirosabdalla.github.io/Resume/Resume.pdf" target="_blank" className="hero__button">
+                                <a href="https://samirosabdalla.github.io/my-resume/Resume.pdf" target="_blank" className="hero__button">
                                     Resume
                                 </a>
 

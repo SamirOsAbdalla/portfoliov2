@@ -31,7 +31,7 @@ function Skills(props: any, ref: any) {
                 <h2 className="section__header skills__header"><span>Skills</span></h2>
                 <p className="skills__text">
                     My web technologies are part of what is commonly known as the MERN stack. I have highlighted below the technical skills that I will bring
-                    to your project. At the bottom is an overall summary of what I use for web development.
+                    to your project. At the bottom is a TLDR of what I use for web development.
                 </p>
                 <div className="skills__technologies__wrapper">
                     <div className="skills__technologies">
