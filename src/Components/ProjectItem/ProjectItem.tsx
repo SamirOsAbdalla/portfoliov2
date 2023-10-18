@@ -3,6 +3,7 @@ import "./ProjectItem.css"
 import Image from 'next/image'
 import clusterImage from "../../../public/cluster.png"
 import pokestoreImage from "../../../public/pokeStore.png"
+import dsImage from "../../../public/ds.png"
 
 export interface IProjectItem {
     projectTitle: string,
@@ -27,6 +28,10 @@ export default function ProjectItem({
         }
         case ("PokeStore"): {
             imageLink = pokestoreImage
+            break;
+        }
+        case ("DS Visualizer"): {
+            imageLink = dsImage
         }
     }
     return (

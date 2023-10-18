@@ -42,6 +42,24 @@ function Projects(props: any, ref: any) {
         projectTechnologies: ["Typescript", "React", "NodeJS", "Express", "Redux", "MongoDB"],
     }
 
+    const dsText = <p>I created the Data Structure Visualizer in order to provide helpful visuals to some
+        of my tutees who were learning data structures for the first time. Certain data stuctures, such as the linked list,
+        contain animations that make it clear as to what it means to &quot;reverse a linked list&quot; or
+        what it means to &quot;hash&quot; something.<br /><br />
+
+        My main struggle with this project was figuring out how to animate some of the operations as well
+        as to make those animations clear to someone who was not familiar with the data structures at play.
+        All in all, I really enjoyed this project since I not only created something that could help someone else
+        but I too become even more familiar with some of the fundamental data structures.
+    </p>
+    const dsObject: IProjectItem = {
+        githubLink: "https://github.com/SamirOsAbdalla/ds-visualizer",
+        liveLink: "https://ds-visualizer-jade.vercel.app/",
+        projectTitle: "DS Visualizer",
+        projectDescription: dsText,
+        projectTechnologies: ["Typescript", "NextJS"],
+        videoLink: "https://www.youtube.com/embed/GpHBxOpsK3I"
+    }
 
     return (
         <section ref={ref} className="projects__wrapper">
@@ -56,6 +74,7 @@ function Projects(props: any, ref: any) {
                 <div className="projects__list">
                     <ProjectItem {...clusterObject} />
                     <ProjectItem {...pokestoreObject} />
+                    <ProjectItem {...dsObject} />
                 </div>
             </motion.div>
         </section>
