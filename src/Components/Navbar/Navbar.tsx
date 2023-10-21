@@ -12,14 +12,20 @@ interface Props {
 
 type navScrollSection = "home" | "about" | "skills" | "projects"
 export default function Navbar({ aboutRef, skillsRef, projectsRef }: Props) {
-    const setNavbarActive = () => {
-        const mainNav = document.querySelector(".main__nav")
-        mainNav?.classList.toggle("active")
+    const toggleNav = () => {
+        if (mainNavActive == "active") {
+            setMainNavActive("")
+            setNavHeaderActive("")
+        } else {
 
-        const navHeader = document.querySelector(".nav__header")
-        navHeader?.classList.toggle("active")
+            setMainNavActive("active")
+            setNavHeaderActive("active")
+
+        }
     }
 
+    const [mainNavActive, setMainNavActive] = useState<string>("")
+    const [navHeaderActive, setNavHeaderActive] = useState<string>("")
     const [navHiddenClass, setNavHiddenClass] = useState<string>("shown")
 
     let lastScrollY = useRef(0)
@@ -31,9 +37,10 @@ export default function Navbar({ aboutRef, skillsRef, projectsRef }: Props) {
 
             let difference = window.scrollY - lastScrollY.current
             if (difference > 0) {
+                setMainNavActive("")
+                setNavHeaderActive("")
                 setNavHiddenClass("nav__hidden")
             } else if (difference < 0) {
-
                 setNavHiddenClass("shown")
             }
 
@@ -103,8 +110,8 @@ export default function Navbar({ aboutRef, skillsRef, projectsRef }: Props) {
         navHeader?.classList.toggle("active")
     }
     return (
-        <header className={`nav__header ${navHiddenClass == "nav__hidden" ? "nav__hidden" : ""}`}>
-            <div className="main__nav">
+        <header className={`nav__header ${navHeaderActive == "active" ? "active" : ""} ${navHiddenClass == "nav__hidden" ? "nav__hidden" : ""}`}>
+            <div className={`main__nav ${mainNavActive == "active" ? "active" : ""}`}>
                 <div onClick={() => handleNavClick("home")} className="name__container"> &lt;<span className="name__span">Samir </span>/&gt;</div>
                 <nav>
                     <ul>
@@ -119,7 +126,7 @@ export default function Navbar({ aboutRef, skillsRef, projectsRef }: Props) {
                         </li>
 
                     </ul>
-                    <div onClick={setNavbarActive} className="nav__toggle">
+                    <div onClick={toggleNav} className="nav__toggle">
                         <div className="nav__burger"></div>
                     </div>
                 </nav>
