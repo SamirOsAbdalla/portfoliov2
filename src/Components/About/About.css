@@ -19,7 +19,7 @@
 .about__main {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 2em;
     flex-wrap: wrap-reverse;
 }
