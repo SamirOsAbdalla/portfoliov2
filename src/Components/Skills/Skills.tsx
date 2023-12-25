@@ -10,13 +10,14 @@ import cppLogo from "../../../public/c.svg"
 import gitLogo from "../../../public/git.svg"
 import nextJSLogo from "../../../public/nextjs.svg"
 import reactLogo from "../../../public/react.svg"
+import SkillsCard from './SkillsCard'
 import { motion } from "framer-motion"
 
 import { forwardRef } from 'react'
 import Image from 'next/image'
 
 const skillsArray = ["HTML", "CSS", "JavaScript", "Typescript", "React", "NextJS", "NodeJS"
-    , "ExpressJS", "MongoDB", "Redux", "Git"]
+    , "ExpressJS", "MongoDB", "Redux", "Git", "Bootstrap"]
 function Skills(props: any, ref: any) {
     return (
 
@@ -119,18 +120,17 @@ function Skills(props: any, ref: any) {
                                     <Image width={50} height={50} alt="css" src={cppLogo} />
                                 </div>
                                 <div className="skills__image">
-                                    <Image width={50} height={50} alt="css" src={gitLogo} />
+                                    <Image width={50} height={50} alt="git" src={gitLogo} />
                                 </div>
                             </div>
                             <div className="skills__card__title">
                                 Misc.
                             </div>
                             <p className="skills__paragraph">
-                                I am very familiar with <span className="skills__bold">C++</span> and enjoy using it to build video games with the SFML library.
+                                I am very familiar with <span className="skills__bold">C++</span> and enjoy using it to build a variety of pet projects.
                                 C++ has also helped greatly in maintaining and reinforcing my computer science fundamentals especially
                                 when it comes to OOP. Version control is also no stranger and I employ <span className="skills__bold">git</span> in each one of my projects
                                 to preserve a clear history of my work.
-
                             </p>
                         </div>
                     </div>
