@@ -61,6 +61,28 @@ function Projects(props: any, ref: any) {
         videoLink: "https://www.youtube.com/embed/GpHBxOpsK3I"
     }
 
+    const speedeatsText = <p>SpeedEats is a full-stack web application designed to remove
+        any indecision about where to eat. By clicking on the big blue button on the main page,
+        users who have opted in to allowing their location to be shared will receive a restaurant
+        based off of their location and current filters. Once a restaurant has been found,
+        users can also favorite any restaurant they choose, so long as they have an account
+        registered with the app.<br /><br />
+
+        SpeedEats wraps multiple APIs, specifically the Yelp and TripAdvisor API, in order to
+        provide users with multiple different sources for places to eat, as well as to prevent
+        too much load on any one API. I loved building this app, because I not only use it on a weekly
+        basis, but my friends, family and many other people I don&apos;t know also frequently use it,
+        which makes me keep wanting to build software that can be enjoyed by myriad different people.
+    </p>
+    const speedeatsObject: IProjectItem = {
+        githubLink: "https://github.com/SamirOsAbdalla/speed-eats",
+        liveLink: "https://www.speedeats.co/",
+        projectTitle: "SpeedEats",
+        projectDescription: speedeatsText,
+        projectTechnologies: ["Typescript", "React", "NextJS", "MongoDB", "Bootstrap"],
+        videoLink: ""
+    }
+
     return (
         <section ref={ref} className="projects__wrapper">
             <motion.div
@@ -72,6 +94,7 @@ function Projects(props: any, ref: any) {
             >
                 <h2 className="section__header projects__header"><span>Projects</span></h2>
                 <div className="projects__list">
+                    <ProjectItem {...speedeatsObject} />
                     <ProjectItem {...clusterObject} />
                     <ProjectItem {...pokestoreObject} />
                     <ProjectItem {...dsObject} />

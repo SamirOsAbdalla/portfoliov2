@@ -4,7 +4,7 @@ import Image from 'next/image'
 import clusterImage from "../../../public/cluster.png"
 import pokestoreImage from "../../../public/pokeStore.png"
 import dsImage from "../../../public/ds.png"
-
+import speedeatsImage from "../../../public/speedEats.png"
 export interface IProjectItem {
     projectTitle: string,
     projectDescription: any,
@@ -32,6 +32,11 @@ export default function ProjectItem({
         }
         case ("DS Visualizer"): {
             imageLink = dsImage
+            break
+        }
+        case ("SpeedEats"): {
+            imageLink = speedeatsImage
+            break
         }
     }
     return (
