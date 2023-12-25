@@ -10,7 +10,6 @@ import cppLogo from "../../../public/c.svg"
 import gitLogo from "../../../public/git.svg"
 import nextJSLogo from "../../../public/nextjs.svg"
 import reactLogo from "../../../public/react.svg"
-import SkillsCard from './SkillsCard'
 import { motion } from "framer-motion"
 
 import { forwardRef } from 'react'
