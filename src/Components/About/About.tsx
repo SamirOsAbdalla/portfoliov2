@@ -24,8 +24,8 @@ function About(props: any, ref: any) {
                             with the <span>React</span> and <span>Typescript</span> ecosystem, but I am
                             constantly learning new technologies to try and stay up-to-date with the ever-changing industry standards.
                             Currently, I am looking for work and hoping to grow and develop my skills with a company.
-                            When I am not working on anything, I enjoy playing basketball with friends, gaming, and thinking
-                            about that one bug that popped up in my last coding session (it happens every single time).
+                            When I am not working on anything, I enjoy playing basketball with friends, gaming, and
+                            watching funny videos from my favorite software engineering youtubers.
                         </p>
                         <div className="about__text__bold">Listed below are the main technologies I use</div>
                         <ul className="about__list">
