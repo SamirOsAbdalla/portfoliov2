@@ -139,7 +139,7 @@ export default function Hero({ projectsRef }: Props) {
                                 <div onClick={handleViewClick} className="hero__button">
                                     View Work
                                 </div>
-                                <a href="https://samirosabdalla.github.io/Resume/Samir-Resume.pdf" target="_blank" className="hero__button">
+                                <a href="https://samirosabdalla.github.io/Resume/My-Resume.pdf" target="_blank" className="hero__button">
                                     Resume
                                 </a>
 
