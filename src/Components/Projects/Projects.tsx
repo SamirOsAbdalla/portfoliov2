@@ -96,7 +96,7 @@ function Projects(props: any, ref: any) {
                 <div className="projects__list">
                     <ProjectItem {...speedeatsObject} />
                     <ProjectItem {...clusterObject} />
-                    <ProjectItem {...pokestoreObject} />
+                    {/* <ProjectItem {...pokestoreObject} /> */}
                     <ProjectItem {...dsObject} />
                 </div>
             </motion.div>
